@@ -309,14 +309,14 @@ readSPMCE <- function(path, conf=.05) {
                 
                 RFq <- g0^2 * res$beta$est[1]^2 + g1^2 * (1-g0^2) 
                 RDq <- sum(res$r_unq[[ii]]$est^2) 
-                Rq <- RFq + RDq
+                RTq <- RFq + RDq
                 
                 res$RSq[[paste0("Covariate: EV", ii)]] <- data.frame(
-                    est=c(RFq, RDq, Rq, RPq)
+                    est=c(RFq, RDq, RTq, RPq)
                 )
                 
                 rownames(res$RSq[[paste0("Covariate: EV", ii)]]) <-
-                    c("R2_Fq", "R2_Dq", "R2_q", "r2_Pq")
+                    c("R2_Fq", "R2_Dq", "R2_Tq", "r2_Pq")
             }
         }
     }
