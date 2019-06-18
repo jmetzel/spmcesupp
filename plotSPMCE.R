@@ -3,7 +3,7 @@ library(ggplot2)
 plotSPMCE <- function(res, clabels=NULL, elabels=NULL, print.pdfs=TRUE, keep.plots=FALSE){
     
     # PLOT 1: CIRCUMPLEX PLOT WITH COVARIATE PROJECTIONS AND CONFIDENCE ELLIPSES
-    # HELPERS
+    # HELPER
     drawcirc <- function(center = c(0,0), diameter=2, npoints=500){
         r = diameter / 2
         tt <- seq(0,2*pi,length.out = npoints)
