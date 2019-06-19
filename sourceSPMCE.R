@@ -18,5 +18,3 @@ message("\nLoading depencies:")
 suppressMessages(library(MplusAutomation))
 suppressMessages(library(ggplot2))
 suppressMessages(library(circumplex))
-
-message("\nSuccessfully sourced the SPMC-E functions.\nFor a tutorial on how to use these functions please refer to:\nNagy, G. & Etzel, J. M. (XXXX). Title. Journal. Volume. Doi.")
